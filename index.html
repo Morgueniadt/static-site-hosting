@@ -10,217 +10,143 @@
 			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
 			crossorigin="anonymous"
 		/>
-		<ul class="nav nav-tabs">
-			<li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="#">Active</a>
-			</li>
-			<li class="nav-item dropdown">
-				<a
-					class="nav-link dropdown-toggle"
-					data-bs-toggle="dropdown"
-					href="#"
-					role="button"
-					aria-expanded="false"
-					>Dropdown</a
-				>
-				<ul class="dropdown-menu">
-					<li><a class="dropdown-item" href="index_week2.html">week 2</a></li>
-					<li><a class="dropdown-item" href="in">week 3</a></li>
-					<li><a class="dropdown-item" href="#">week 4</a></li>
-					<li><hr class="dropdown-divider" /></li>
-					<li><a class="dropdown-item" href="#">Separated link</a></li>
-				</ul>
-			</li>
-			<li class="nav-item">
-				<a
-					class="nav-link"
-					href="https://getbootstrap.com/docs/5.3/components/navs-tabs/"
-					>Link</a
-				>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link disabled" aria-disabled="true">Disabled</a>
-			</li>
-		</ul>
 	</head>
+	<h1>Hello, world!</h1>
+	<ul class="nav nav-tabs">
+		<li class="nav-item">
+			<a class="nav-link active" aria-current="page" href="#">Active</a>
+		</li>
+		<li class="nav-item dropdown">
+			<a
+				class="nav-link dropdown-toggle"
+				data-bs-toggle="dropdown"
+				href="#"
+				role="button"
+				aria-expanded="false"
+				>Dropdown</a
+			>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="index.html">week 1</a></li>
+				<li><a class="dropdown-item" href="#">week 3</a></li>
+				<li><a class="dropdown-item" href="#">week 4</a></li>
+				<li><hr class="dropdown-divider" /></li>
+				<li><a class="dropdown-item" href="#">Separated link</a></li>
+			</ul>
+		</li>
+		<li class="nav-item">
+			<a
+				class="nav-link"
+				href="https://getbootstrap.com/docs/5.3/components/navs-tabs/"
+				>Link</a
+			>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link disabled" aria-disabled="true">Disabled</a>
+		</li>
+		<li class="nav-item">
+			<a
+				class="nav-link btn"
+				data-bs-toggle="modal"
+				data-bs-target="#exampleModal"
+				>Active</a
+			>
+			<div
+				class="modal fade"
+				id="exampleModal"
+				tabindex="-1"
+				aria-labelledby="exampleModalLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">
+								Modal title
+							</h1>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="modal-body">
+							<iframe
+								width="450"
+								height="315"
+								src="https://www.youtube-nocookie.com/embed/S0KAAsanVms?si=tYfeQyHDQ7txzI4-"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin"
+								allowfullscreen
+							></iframe>
+						</div>
+						<!--browser doesnt support media tag, cant use videos online have to have folder dedicated to media  -->
+						<div class="modal-footer">
+							<button
+								type="button"
+								class="btn btn-secondary"
+								data-bs-dismiss="modal"
+							>
+								Close
+							</button>
+							<button type="button" class="btn btn-primary">
+								Save changes
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<!--modal button, can pretty much put anyhting in jsut keep class in mind so it fits in with surrounding nav bars or buttons-->
 	<body>
-		<h1>Hello, world!</h1>
 		<div class="container">
-			<!-- Content here -->
+			<div class="card col-4">
+				<img src="..." class="card-img-top" alt="..." />
 
-			<div class="mb-3">
-				<label for="exampleFormControlInput1" class="form-label"
-					>Email address</label
-				>
-				<input
-					type="email"
-					class="form-control"
-					id="exampleFormControlInput1"
-					placeholder="name@example.com"
-				/>
-			</div>
-			<div class="mb-3">
-				<label for="exampleFormControlTextarea1" class="form-label"
-					>Example textarea</label
-				>
-				<textarea
-					class="form-control"
-					id="exampleFormControlTextarea1"
-					rows="3"
-				></textarea>
-			</div>
-
-			<div class="accordion" id="accordionExample">
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button
-							class="accordion-button"
-							type="button"
-							data-bs-toggle="collapse"
-							data-bs-target="#collapseOne"
-							aria-expanded="true"
-							aria-controls="collapseOne"
-						>
-							Accordion Item #1
-						</button>
-					</h2>
-					<div
-						id="collapseOne"
-						class="accordion-collapse collapse show"
-						data-bs-parent="#accordionExample"
-					>
-						<div class="accordion-body">
-							<strong>This is the first item's accordion body.</strong> It is
-							shown by default, until the collapse plugin adds the appropriate
-							classes that we use to style each element. These classes control
-							the overall appearance, as well as the showing and hiding via CSS
-							transitions. You can modify any of this with custom CSS or
-							overriding our default variables. It's also worth noting that just
-							about any HTML can go within the <code>.accordion-body</code>,
-							though the transition does limit overflow.
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button
-							class="accordion-button collapsed"
-							type="button"
-							data-bs-toggle="collapse"
-							data-bs-target="#collapseTwo"
-							aria-expanded="false"
-							aria-controls="collapseTwo"
-						>
-							Accordion Item #2
-						</button>
-					</h2>
-					<div
-						id="collapseTwo"
-						class="accordion-collapse collapse"
-						data-bs-parent="#accordionExample"
-					>
-						<div class="accordion-body">
-							<strong>This is the second item's accordion body.</strong> It is
-							hidden by default, until the collapse plugin adds the appropriate
-							classes that we use to style each element. These classes control
-							the overall appearance, as well as the showing and hiding via CSS
-							transitions. You can modify any of this with custom CSS or
-							overriding our default variables. It's also worth noting that just
-							about any HTML can go within the <code>.accordion-body</code>,
-							though the transition does limit overflow.
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button
-							class="accordion-button collapsed"
-							type="button"
-							data-bs-toggle="collapse"
-							data-bs-target="#collapseThree"
-							aria-expanded="false"
-							aria-controls="collapseThree"
-						>
-							Accordion Item #3
-						</button>
-					</h2>
-					<div
-						id="collapseThree"
-						class="accordion-collapse collapse"
-						data-bs-parent="#accordionExample"
-					>
-						<div class="accordion-body">
-							<strong>This is the third item's accordion body.</strong> It is
-							hidden by default, until the collapse plugin adds the appropriate
-							classes that we use to style each element. These classes control
-							the overall appearance, as well as the showing and hiding via CSS
-							transitions. You can modify any of this with custom CSS or
-							overriding our default variables. It's also worth noting that just
-							about any HTML can go within the <code>.accordion-body</code>,
-							though the transition does limit overflow.
-						</div>
-					</div>
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">
+						Some quick example text to build on the card title and make up the
+						bulk of the card's content.
+					</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
 				</div>
 			</div>
+			<!--card for quicks n that, small image display lil description too, enctice users-->
+			<div class="card col-4" aria-hidden="true">
+				<img src="..." class="card-img-top" alt="..." />
+				<div class="card-body">
+					<h5 class="card-title placeholder-glow">
+						<span class="placeholder col-6"></span>
+					</h5>
+					<p class="card-text placeholder-glow">
+						<span class="placeholder col-7"></span>
+						<span class="placeholder col-4"></span>
+						<span class="placeholder col-4"></span>
+						<span class="placeholder col-6"></span>
+						<span class="placeholder col-8"></span>
+					</p>
+					<a
+						class="btn btn-primary disabled placeholder col-6"
+						aria-disabled="true"
+					></a>
+				</div>
+			</div>
+			<!-- second vartioan that looks like its loading  24/7-->
+			<button
+				type="button"
+				class="btn btn-lg btn-danger"
+				data-bs-toggle="popover"
+				data-bs-title="Popover title"
+				data-bs-content="And here's some amazing content. It's very engaging. Right?"
+			>
+				Click to toggle popover</button
+			><!--popover like a small info dumo for users to learn something quick-->
 		</div>
 
-		<div class="container">
-			<button type="button" class="btn btn-primary">Primary</button>
-			<button type="button" class="btn btn-secondary">Secondary</button>
-			<button type="button" class="btn btn-success">Success</button>
-			<button type="button" class="btn btn-danger">Danger</button>
-			<button type="button" class="btn btn-warning">Warning</button>
-			<button type="button" class="btn btn-info">Info</button>
-			<button type="button" class="btn btn-light">Light</button>
-			<button type="button" class="btn btn-dark">Dark</button>
-
-			<button type="button" class="btn btn-link">Link</button>
-		</div>
-		<div class="container">
-			<p class="d-inline-flex gap-1">
-				<button type="button" class="btn" data-bs-toggle="button">
-					Toggle button
-				</button>
-				<button
-					type="button"
-					class="btn active"
-					data-bs-toggle="button"
-					aria-pressed="true"
-				>
-					Active toggle button
-				</button>
-				<button type="button" class="btn" disabled data-bs-toggle="button">
-					Disabled toggle button
-				</button>
-			</p>
-			<p class="d-inline-flex gap-1">
-				<button type="button" class="btn btn-primary" data-bs-toggle="button">
-					Toggle button
-				</button>
-				<button
-					type="button"
-					class="btn btn-primary active"
-					data-bs-toggle="button"
-					aria-pressed="true"
-				>
-					Active toggle button
-				</button>
-				<button
-					type="button"
-					class="btn btn-primary"
-					disabled
-					data-bs-toggle="button"
-				>
-					Disabled toggle button
-				</button>
-			</p>
-		</div>
-
-		<div class="container">
-			<button type="button" class="btn btn-primary">
-				Notifications <span class="badge text-bg-secondary">4</span>
-			</button>
-		</div>
 		<script>
 			src =
 				"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js";
@@ -239,5 +165,14 @@
 			integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
 			crossorigin="anonymous"
 		></script>
+		<script>
+			const popoverTriggerList = document.querySelectorAll(
+				'[data-bs-toggle="popover"]'
+			);
+			const popoverList = [...popoverTriggerList].map(
+				(popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+			);
+		</script>
+		<!--stuff for popover animantion-->
 	</body>
 </html>
